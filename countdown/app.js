@@ -1,7 +1,5 @@
 'use strict'
 
-console.log('gy')
-
 let today
 let theDay
 let formatDate
@@ -9,7 +7,7 @@ let selectElement
 
 function updateTime () {
   today = new Date()
-  theDay = new Date('2021-06-05T3:02:00Z')
+  theDay = new Date('2021-06-06T3:02:00Z')
   formatDate = dateDiffFormatted(today, theDay)
   selectElement = document.getElementById('timer')
   selectElement.innerHTML = formatDate
