@@ -1,5 +1,7 @@
 'use strict'
 
+console.log('gy')
+
 let today
 let theDay
 let formatDate
@@ -7,9 +9,9 @@ let selectElement
 
 function updateTime () {
   today = new Date()
-  theDay = new Date('2021-06-6T4:30:00Z')
+  theDay = new Date('2021-08-11T14:26:00Z')
   formatDate = dateDiffFormatted(today, theDay)
-  selectElement = document.getElementById('timer')
+  selectElement = document.getElementById('date')
   selectElement.innerHTML = formatDate
 }
 
@@ -27,6 +29,11 @@ function dateDiffFormatted (a, b) {
         String(minutes % 60).padStart(2, '0') + ':' +
         String(seconds % 60).padStart(2, '0') + ':' +
         String(milliseconds % 1000).padStart(3, '0')
+}
+
+function topFunction () {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
 
 setInterval(updateTime, 1)
