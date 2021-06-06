@@ -1,0 +1,17 @@
+a:link {
+  background-color: #001aff;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #7700ff;
+}
+
+a:active {
+background-color: #ae00ff
+
+}
