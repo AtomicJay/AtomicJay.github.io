@@ -1,6 +1,9 @@
+a {
+color: #ffffff;
+}
+
 a:link {
   background-color: #001aff;
-  color: white;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
