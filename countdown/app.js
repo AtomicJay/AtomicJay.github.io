@@ -7,7 +7,7 @@ let selectElement
 
 function updateTime () {
   today = new Date()
-  theDay = new Date('2021-06-22T01:21:00Z')
+  theDay = new Date('2021-08-08T07:00:00Z')
   formatDate = dateDiffFormatted(today, theDay)
   selectElement = document.getElementById('timer')
   selectElement.innerHTML = formatDate
